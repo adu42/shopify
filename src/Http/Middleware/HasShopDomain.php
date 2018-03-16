@@ -12,6 +12,6 @@ class HasShopDomain
             return $next($request);
         }
 
-        return redirect(route('carter.signup'));
+        return redirect(route('shopify.signup'));
     }
 }

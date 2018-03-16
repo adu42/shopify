@@ -12,6 +12,6 @@ class AuthenticatedShopsController extends Controller
 
         Auth::login($user);
 
-        return redirect(route('carter.dashboard'));
+        return redirect(route('shopify.dashboard'));
     }
 }

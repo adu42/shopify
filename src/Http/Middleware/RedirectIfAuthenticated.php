@@ -13,6 +13,6 @@ class RedirectIfAuthenticated
             return $next($request);
         }
 
-        return redirect()->route('carter.dashboard');
+        return redirect()->route('shopify.dashboard');
     }
 }

@@ -15,6 +15,6 @@ class RegisteredShopsController extends Controller
 
         Auth::login(config('auth.providers.users.model')::createForShop($shop, $token));
 
-        return redirect(route('carter.dashboard'));
+        return redirect(route('shopify.dashboard'));
     }
 }

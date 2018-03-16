@@ -17,6 +17,6 @@ class HasValidNonce
 
     protected function validNonce()
     {
-        return strlen(request('state')) && request('state') === session('carter.oauth-state');
+        return strlen(request('state')) && request('state') === session('shopify.oauth-state');
     }
 }

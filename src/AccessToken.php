@@ -21,8 +21,8 @@ class AccessToken
     protected function requestData($code)
     {
         return [
-            'client_id' => config('carter.client_id'),
-            'client_secret' => config('carter.client_secret'),
+            'client_id' => config('shopify.client_id'),
+            'client_secret' => config('shopify.client_secret'),
             'code' => $code,
         ];
     }

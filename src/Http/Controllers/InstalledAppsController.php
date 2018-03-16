@@ -12,7 +12,7 @@ class InstalledAppsController extends Controller
     {
         $s = Str::random(30);
         $nonce = tap($s, function ($nonce) {
-            session(['carter.oauth-state' => $nonce]);
+            session(['shopify.oauth-state' => $nonce]);
         });
 
         return redirect($this->authorizationUrl($shopify, $nonce));
@@ -21,7 +21,7 @@ class InstalledAppsController extends Controller
     protected function authorizationUrl($shopify, $nonce)
     {
         return $shopify->authorize(
-            config('carter.client_id'), config('carter.scope'), config('carter.redirect_uri'), $nonce
+            config('shopify.client_id'), config('shopify.scope'), config('shopify.redirect_uri'), $nonce
         );
     }
 }

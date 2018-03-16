@@ -6,6 +6,6 @@ class DashboardController extends Controller
 {
     public function index()
     {
-        return view('carter::embedded.dashboard');
+        return view('shopify::embedded.dashboard');
     }
 }

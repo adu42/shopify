@@ -14,9 +14,9 @@ class Authenticate
         }
 
         if ($request->has('shop')) {
-            return redirect()->route('carter.login', $request->only('shop'));
+            return redirect()->route('shopify.login', $request->only('shop'));
         }
 
-        return redirect()->route('carter.expired-session');
+        return redirect()->route('shopify.expired-session');
     }
 }

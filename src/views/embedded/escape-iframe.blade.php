@@ -1,4 +1,4 @@
-@extends('carter::embedded')
+@extends('shopify::embedded')
 
 @section('script')
     <script>
