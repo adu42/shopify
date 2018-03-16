@@ -1,0 +1,14 @@
+{
+    "name": "ado/shopify",
+    "type": "composer-plugin",
+    "require": {
+        "kitetail/zttp": "^0.3.0"
+    },
+    "authors": [
+        {
+            "name": "ado-work",
+            "email": "114458573@qq.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
